@@ -1,0 +1,26 @@
+3)
+ALTER TABLE uczen ADD id_ucznia INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`id_ucznia`);
+
+6)
+
+a)
+SELECT * FROM uczen ORDER BY nazwisko DESC;
+
+b)
+SELECT * FROM uczen WHERE nazwisko LIKE 'N%' AND imie LIKE '%A';
+
+7)
+
+a)
+SELECT COUNT(id_ucznia) FROM uczen;
+
+b)
+SELECT AVG(ocena) FROM oceny;
+
+8)
+
+c)
+SELECT imie, nazwisko, ocena FROM uczen, oceny WHERE id_przedmiotu = 2 AND ocena > (SELECT AVG(ocena) FROM oceny) AND oceny.id_ucznia = uczen.id_ucznia;
+
+d)
+SELECT CONCAT(imie, nazwisko) as 'Imie i nazwisko', nazwa_przedmiotu as 'Przedmiot', ocena FROM uczen, przedmiot, oceny WHERE oceny.id_ucznia = uczen.id_ucznia AND oceny.id_przedmiotu = przedmiot.id_przedmiotu;
