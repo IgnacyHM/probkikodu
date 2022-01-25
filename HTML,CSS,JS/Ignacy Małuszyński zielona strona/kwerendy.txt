@@ -1,4 +1,0 @@
-a) INSERT INTO `lokalizacja` (`id`, `Nazwa`, `Adres`) VALUES ('3', 'KAT1', 'Katowice, Korfantego 105');
-b) SELECT `pogoda`.`temperatura` FROM `pogoda` WHERE (`pogoda`.`temperatura` >20)
-c) SELECT `lokalizacja`.`id`, `prognoza`.`dataProg`, `pogoda`.`Wilgotnosc` FROM `lokalizacja`, `prognoza`, `pogoda` WHERE (`pogoda`.`Wilgotnosc` >50)
-d)SELECT `lokalizacja`.`Nazwa`, `pogoda`.`id`, `prognoza`.`dataProg` FROM `lokalizacja`, `pogoda`, `prognoza` WHERE (`prognoza`.`dataProg` 2015-07-02)
