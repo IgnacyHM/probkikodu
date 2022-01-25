@@ -1,0 +1,39 @@
+body{
+    font-family: Arial;
+}
+.lewy, .środkowy, .prawy, .lewy1, .środkowy1, .prawy1{
+    background-color: saddlebrown;
+    color: white;
+    height: 100px;
+}
+.lewy, .lewy1{
+    width: 55%;
+    font-size: 120%;
+    float: left;
+}
+.środkowy, .środkowy1{
+    width: 25%;
+    float: left;
+}
+.prawy, .prawy1{
+    width: 20%;
+    text-align: right;
+    float: left;
+}
+.glowny{
+    background-color: snow;
+    padding: 70px;
+    clear: both;
+}
+a{
+    border: dotted 2px saddlebrown;
+    background-color: snow;
+    color: saddlebrown;
+    padding: 20px;
+    line-height: 100px;
+
+}
+ol{
+    list-style-type: lower-latin;
+
+}
